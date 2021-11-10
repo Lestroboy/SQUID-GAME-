@@ -10,7 +10,7 @@ int main()
 
                                 //WELLCOMING THE PLAYER.
     
-    cout<<"\t\t\t\tWELLCOME TO PROGU WORLD.\t\t"<<endl;
+    cout<<"\t\t\t\tWELLCOME TO LESTRO WORLD.\t\t"<<endl;
     
     cout<<"PRESS ENTER TO START."<<endl;
     getchar();
