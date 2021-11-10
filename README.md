@@ -37,7 +37,7 @@ int main()
     
     if(choice == 1)
     {
-    cout<<"\t\t\t\tWELLCOME TO SQUID GAME :)\t\t"<<endl;
+    cout<<"\t\t\t\tWELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
     
                                 //FIRST GAME.
     cout<<"\t\t\t\t__________________________"<<endl<<endl;
@@ -46,7 +46,7 @@ int main()
     
     cout<<"\t\t\t     GAME1: RED LIGHT - GREEN LIGHT."<<endl<<endl;
     
-    cout<<"\t\t\tHI PLAYER I HAVE SET A NUMBER IN MY MIND\n\t\t\tBETWEEN 1 TO 100.YOU HAVE 8 CHANCE TO GUESS\n\t\t\tMY NUMBER.BUT IF YOU DIDN'T GUESSED THE NUMBER\n\t\t\tWITHIN 8 CHANCE,YOU WILL BE ELIMINATED FROM THE GAME!"<<endl;
+    cout<<"\t\t\tHI "<<name<<"! I HAVE SET A NUMBER IN MY MIND\n\t\t\tBETWEEN 1 TO 100.YOU HAVE 8 CHANCE TO GUESS\n\t\t\tMY NUMBER.BUT IF YOU DIDN'T GUESSED THE NUMBER\n\t\t\tWITHIN 8 CHANCE,YOU WILL BE ELIMINATED FROM THE GAME!"<<endl;
     
     int num, guess, tries = 0;
     
@@ -79,7 +79,7 @@ int main()
 		}
 		
 		else{
-		    cout<<"YOU ARE ELIMINATED!"<<endl;
+		    cout<<name<<" YOU ARE ELIMINATED!"<<endl;
 		    return 0;
 		}
 		
@@ -139,7 +139,7 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                cout<<"\t\t\t\t"<<name<<"YOU ARE ELIMINATED!"<<endl;
                 return 0;
             }
         }
@@ -154,7 +154,7 @@ int main()
             
             if(playercount == 4)
             {
-                cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
+                cout<<"CONGRATULATION "<<name<<"! YOU WON THIS GAME!"<<endl;
                 goto restart3;
                 cout<<endl<<endl;
             }
@@ -179,7 +179,7 @@ int main()
             
             if(playercount == 4)
             {
-                cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
+                cout<<"CONGRATULATION "<<name<<"! YOU WON THIS GAME!"<<endl;
                 goto restart3;
                 cout<<endl<<endl;
             }
@@ -203,7 +203,7 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                cout<<"\t\t\t\t "<<name<<" YOU ARE ELIMINATED!"<<endl;
                 return 0;
             }
         }
@@ -228,7 +228,7 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                cout<<"\t\t\t\t "<<name<<" YOU ARE ELIMINATED!"<<endl;
                 return 0;
             }
         }
@@ -243,7 +243,7 @@ int main()
             
             if(playercount == 4)
             {
-                cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
+                cout<<"CONGRATULATION "<<name<<"! YOU WON THIS GAME!"<<endl;
                 goto restart3;
                 cout<<endl<<endl;
             }
@@ -280,7 +280,8 @@ int main()
     else if(choice == 0)
     {
         cout<<"\t\t\t\tI THINK YOU ARE AFRAID TO PLAY\t\t"<<endl;
-        cout<<"\t\t\t\t            BYE               \t\t"<<endl;
+        cout<<"\t\t\t\t            BYE\t\t"<<endl;
+        cout<<"\t\t\t\t        "<<name<<"            \t\t"<<endl;
         cout<<"\t\t\t\t             :)               \t\t"<<endl;
         return 0;
     }
