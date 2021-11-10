@@ -74,7 +74,7 @@ int main()
 			
 		if(tries <= 8)
 		{
-		    cout<<"CONGRATULATIONS YOU GUESSED IN "<<tries<<" TRIES!"<<endl;
+		    cout<<"CONGRATULATIONS YOU GUESSED IN "<<tries<<" TRIES!"<<endl<<endl;
 		    goto restart4;
 		}
 		
@@ -85,9 +85,10 @@ int main()
 		
 		restart4:
 		
-		cout<<"\t\t\t\t********************************************"<<endl;
-        cout<<"\t\t\t\t*CONGRATULATION YOU MADE WITH FIRST GAME :)*"<<endl;
-        cout<<"\t\t\t\t********************************************"<<endl;
+		cout<<"\t\t\t********************************************"<<endl;
+        cout<<"\t\t\t*CONGRATULATION YOU MADE WITH FIRST GAME :)*"<<endl;
+        cout<<"\t\t\t********************************************"<<endl;
+        
         
                                 //SECOUND GAME
         cout<<"\t\t\t\t____________________________"<<endl<<endl;       
@@ -97,7 +98,7 @@ int main()
         cout<<"\t\t\t        GAME2: ROCK-PAPER-SCISSOR."<<endl<<endl;
 
         cout << "\t\t\tTHE RULES OF THIS GAME ARE THE FOLLOWING: " <<endl<<endl;
-        cout << "\t\t\tA) THIS GAME WILL BE THE BEST OUT 5." <<endl;
+        cout << "\t\t\tA) THIS GAME WILL BE THE BEST OUT 4." <<endl;
         cout << "\t\t\tB) ROCK BEATS SCISSORS, BUT LOOSES AGAINST PAPER" <<endl;
         cout << "\t\t\tC) SCISSORS BEATS PAPER, BUT LOOSES AGAINST ROCK" <<endl;
         cout << "\t\t\tD) PAPER BEATS ROCK, BUT LOOSES AGAINST SCISSORS" <<endl<<endl;
@@ -138,7 +139,8 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                goto restart3;
+                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                return 0;
             }
         }
         
@@ -154,6 +156,7 @@ int main()
             {
                 cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
                 goto restart3;
+                cout<<endl<<endl;
             }
         }
         
@@ -178,6 +181,7 @@ int main()
             {
                 cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
                 goto restart3;
+                cout<<endl<<endl;
             }
         }
         
@@ -199,7 +203,8 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                goto restart3;
+                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                return 0;
             }
         }
             
@@ -210,7 +215,7 @@ int main()
         else if(pick == 's')
         {
             cout<<"YOU CHOOSED |SCISSORS|"<<endl;
-            compchoice = rand () % 3 + 1;
+            compchoice = rand () % 3 + 3;
         
         if(compchoice == 1)
         {
@@ -223,7 +228,8 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                goto restart3;
+                cout<<"\t\t\t\tYOU ARE ELIMINATED!"<<endl;
+                return 0;
             }
         }
         
@@ -239,6 +245,7 @@ int main()
             {
                 cout<<"CONGRATULATION! YOU WON THIS GAME!"<<endl;
                 goto restart3;
+                cout<<endl<<endl;
             }
         }
         
@@ -261,6 +268,7 @@ int main()
    
     restart3:
     
+    cout<<endl;
     cout<<"\t\t\t\t**************************************************"<<endl;
     cout<<"\t\t\t\t*CONGRATULATION YOU MADE WITH SECOUND GAME TOO :)*"<<endl;
     cout<<"\t\t\t\t**************************************************"<<endl;                        
