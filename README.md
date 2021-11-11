@@ -37,7 +37,7 @@ int main()
     
     if(choice == 1)
     {
-    cout<<"\t\t\t\tWELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
+    cout<<"\t\t\t    WELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
     
                                 //FIRST GAME.
     cout<<"\t\t\t\t__________________________"<<endl<<endl;
@@ -269,9 +269,174 @@ int main()
     restart3:
     
     cout<<endl;
-    cout<<"\t\t\t\t**************************************************"<<endl;
-    cout<<"\t\t\t\t*CONGRATULATION YOU MADE WITH SECOUND GAME TOO :)*"<<endl;
-    cout<<"\t\t\t\t**************************************************"<<endl;                        
+    cout<<"\t\t\t**************************************************"<<endl;
+    cout<<"\t\t\t*CONGRATULATION YOU MADE WITH SECOUND GAME TOO :)*"<<endl;
+    cout<<"\t\t\t**************************************************"<<endl; 
+    
+                                //THIRD GAME
+    
+    cout<<"\t\t\t\t____________________________"<<endl<<endl;
+    cout<<"\t\t\t\t   WELLCOME TO THIRD GAME.  "<<endl<<endl;
+    cout<<"\t\t\t\t____________________________"<<endl<<endl;
+    
+    cout<<"\t\t         GAME3: GLASS STEPPING STONE BRIDGE"<<endl<<endl;
+    
+    cout << "\t\t\tTHE RULES OF THIS GAME ARE THE FOLLOWING: " <<endl<<endl;
+    cout << "\t\t\tA) THIS GAME HAS GLASSES OF 2 ROW'S." <<endl;
+    cout << "\t\t\tB) EACH COLUMN HAS 2 GLASS WITH 7 COLUMNS." <<endl;
+    cout << "\t\t\tC) ALTERNATELY ONE OF THEM IS TEMPERED GLASS AND REGULAR GLASS." <<endl;
+    cout << "\t\t\tD) IF YOU STEPED ON REGULAR GLASS YOU WILL BE ELIMINATED." <<endl<<endl;
+    
+    int glass, side, glasscount (0), columncount (0);
+    srand(time(0));
+    
+    restart7:
+    
+    restart8:
+    
+    restart11:
+    
+                                //CHOOSE THE GLASS
+    
+    columncount++;
+    cout<<"CHANCE NO : "<<columncount<<endl;
+    cout<<"CHOOSE THE GLASS TO STEP : 1 - RIGHT GLASS."<<endl;
+    cout<<"                           2 - LEFT GLASS."<<endl;
+    
+    cin>>glass;
+    
+                                //RIGHT GLASS CHOOSED
+    
+    if(glass == 1)
+    {
+        cout<<"YOU CHOOSED |RIGHT SIDE GLASS|"<<endl;
+        side = rand() % 2 ;
+        cout<<endl;
+        
+        if(side == 1)
+        {
+            cout<<"YOU STEPED ON TEMPERED GLASS."<<endl;
+            glasscount++;
+            cout<<"GOOD! YOU PASSED "<<glasscount<<" CLOUMN GLASS."<<endl;
+            cout<<endl;
+            
+            if(glasscount == 7)
+            {
+                cout<<"CONGRATULATIONS! YOU PASSED ALL 7 COLUMNS GLASS."<<endl;
+                goto restart6;
+            }
+            
+            goto restart7;
+            
+        }
+        
+        else
+        {
+            cout<<"OPS....YOU STEPED ON REGULAR GLASS."<<endl;
+            cout<<"YOU ARE ELIMINATED!"<<endl;
+            cout<<endl;
+            
+            restart9:
+            
+            cout<<"STILL YOU WANT TO CONTINUE THE GAME."<<endl;
+            cout<<"ENTER : y-YES OR n-NO."<<endl;
+            
+            char yeno;
+            
+            cin>>yeno;
+            
+            if(yeno == 'y' || yeno == 'Y')
+            {
+                goto restart8;
+                cout<<endl;
+            }
+            
+            else if(yeno == 'n' || yeno == 'N')
+            {
+                return 0;
+            }
+            
+            else
+            {
+                cout<<"ENTER THE CORRECT INPUT."<<endl;
+                goto restart9;
+            }
+           
+        }
+    }
+    
+                                //LEFT GLASS CHOOSED
+    
+    else if(glass == 2)
+    {
+        cout<<"YOU CHOOSED |LEFT SIDE GLASS|"<<endl;
+        side = rand() % 2 ;
+        cout<<endl;
+        
+        if(side == 1)
+        {
+            cout<<"YOU STEPED ON TEMPERED GLASS."<<endl;
+            glasscount++;
+            cout<<"GOOD! YOU PASSED "<<glasscount<<" CLOUMN GLASS."<<endl;
+            cout<<endl;
+            
+            if(glasscount == 7)
+            {
+                cout<<"CONGRATULATIONS! YOU PASSED ALL 7 COLUMNS GLASS."<<endl;
+                goto restart6;
+            }
+            
+            goto restart7;
+            cout<<endl;
+            
+        }
+        
+        else
+        {
+            cout<<"OPS....YOU STEPED ON REGULAR GLASS."<<endl;
+            cout<<"YOU ARE ELIMINATED!"<<endl;
+            cout<<endl;
+            
+            restart10:
+            
+            cout<<"STILL YOU WANT TO CONTINUE THE GAME."<<endl;
+            cout<<"ENTER : y-YES OR n-NO."<<endl;
+            
+            char yeno;
+            
+            cin>>yeno;
+            
+            if(yeno == 'y' || yeno == 'Y')
+            {
+                goto restart8;
+                cout<<endl;
+            }
+            
+            else if(yeno == 'n' || yeno == 'N')
+            {
+                return 0;
+            }
+            
+            else
+            {
+                cout<<"ENTER THE CORRECT INPUT."<<endl;
+                goto restart10;
+            }
+        }
+        
+    }
+    
+    else
+    {
+        cout<<"ENTERED INPUT IS INCORRECT\nRE-ENTER."<<endl;
+        goto restart11;
+    }
+    
+        restart6:
+        
+        cout<<"\t\t\t***********************************************"<<endl;
+        cout<<"\t\t\t*CONGRATULATION YOU MADE WITH THIRD GAME TOO:)*"<<endl;
+        cout<<"\t\t\t***********************************************"<<endl;
         
     }
     
