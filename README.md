@@ -40,6 +40,9 @@ int main()
     cout<<"\t\t\t    WELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
     
                                 //FIRST GAME.
+                                
+    restart24:
+                                
     cout<<"\t\t\t\t__________________________"<<endl<<endl;
     cout<<"\t\t\t\t  WELLCOME TO FIRST GAME."<<endl<<endl;
     cout<<"\t\t\t\t__________________________"<<endl<<endl;
@@ -80,7 +83,30 @@ int main()
 		
 		else{
 		    cout<<name<<" YOU ARE ELIMINATED!"<<endl;
-		    return 0;
+		    
+		    restart23:
+                
+                char  yono;
+                
+                cout<<"STILL WANT TO PLAY?"<<endl;
+                cin>>yono;
+                
+                if(yono == 'y' || yono == 'Y')
+                {
+                    goto restart24; 
+                }
+                
+                else if(yono == 'n' || yono == 'N')
+                {
+                    return 0;
+                }
+                
+                else
+                {
+                    cout<<"ENTER THE CORRECT INPUT"<<endl;
+                    cout<<endl;
+                    goto restart23;
+                }
 		}
 		
 		restart4:
@@ -91,6 +117,9 @@ int main()
         
         
                                 //SECOUND GAME
+                                
+        restart19:
+        
         cout<<"\t\t\t\t____________________________"<<endl<<endl;       
         cout<<"\t\t\t\t  WELLCOME TO SECOUND GAME."<<endl<<endl;
         cout<<"\t\t\t\t____________________________"<<endl<<endl;
@@ -139,8 +168,31 @@ int main()
             if(compcount == 4)
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
-                cout<<"\t\t\t\t"<<name<<"YOU ARE ELIMINATED!"<<endl;
-                return 0;
+                cout<<"\t\t\t\t"<<name<<" YOU ARE ELIMINATED!"<<endl;
+                
+                restart22:
+                
+                char  yono;
+                
+                cout<<"STILL WANT TO PLAY?"<<endl;
+                cin>>yono;
+                
+                if(yono == 'y' || yono == 'Y')
+                {
+                    goto restart19; 
+                }
+                
+                else if(yono == 'n' || yono == 'N')
+                {
+                    return 0;
+                }
+                
+                else
+                {
+                    cout<<"ENTER THE CORRECT INPUT"<<endl;
+                    cout<<endl;
+                    goto restart22;
+                }
             }
         }
         
@@ -204,7 +256,30 @@ int main()
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
                 cout<<"\t\t\t\t "<<name<<" YOU ARE ELIMINATED!"<<endl;
-                return 0;
+                
+                restart20:
+                
+                char yono;
+                
+                cout<<"STILL WANT TO PLAY?"<<endl;
+                cin>>yono;
+                
+                if(yono == 'y' || yono == 'Y')
+                {
+                    goto restart19; 
+                }
+                
+                else if(yono == 'n' || yono == 'N')
+                {
+                    return 0;
+                }
+                
+                else
+                {
+                    cout<<"ENTER THE CORRECT INPUT"<<endl;
+                    cout<<endl;
+                    goto restart20;
+                }
             }
         }
             
@@ -229,7 +304,30 @@ int main()
             {
                 cout<<"SO....COMPUTER WON THIS GAME!"<<endl;
                 cout<<"\t\t\t\t "<<name<<" YOU ARE ELIMINATED!"<<endl;
-                return 0;
+               
+                restart21:
+                
+                char yono;
+                
+                cout<<"STILL WANT TO PLAY?"<<endl;
+                cin>>yono;
+                
+                if(yono == 'y' || yono == 'Y')
+                {
+                    goto restart19; 
+                }
+                
+                else if(yono == 'n' || yono == 'N')
+                {
+                    return 0;
+                }
+                
+                else
+                {
+                    cout<<"ENTER THE CORRECT INPUT"<<endl;
+                    cout<<endl;
+                    goto restart21;
+                }
             }
         }
         
@@ -438,6 +536,646 @@ int main()
         cout<<"\t\t\t*CONGRATULATION YOU MADE WITH THIRD GAME TOO:)*"<<endl;
         cout<<"\t\t\t***********************************************"<<endl;
         
+        
+        
+                                //FOURTH GAME.
+                    
+                    
+        restart26:                         
+                                
+        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+        cout<<"\t\t\t\t  WELLCOME TO FOURTH GAME."<<endl<<endl;
+        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+    
+        cout<<"\t\t\t\t       GAME4: MARBLES."<<endl<<endl;
+
+        cout << "\t\t\tTHE RULES OF THIS GAME ARE THE FOLLOWING: " <<endl<<endl;
+        cout << "\t\t\tA) YOU WILL HAVE 10 MARBELS WITH YOU." <<endl;
+        cout << "\t\t\tB) COMPUTER(HIS NAME -PROGU) WILL HAVE 10 MARBELS WITH HIM TOO." <<endl;
+        cout << "\t\t\tC) YOU WILL KEEP SOME NUMBERS OF MARBLES IN YOUR HAND CLOSED." <<endl;
+        cout << "\t\t\tD) THEN PROGU WILL GUESS IF THE MARBLE NUMBERS ARE IN EVEN OR ODD." <<endl;
+        cout << "\t\t\tE) IF HE GUESS IT CORRECT YOU HAVE TO GIVE HIM THE MARBLES ONLY " <<endl;
+        cout << "\t\t\t   HOW MUCH NUMBER OF MARBLES HE IS HOLDING IN HIS CLOSED HAND. " <<endl;
+        cout << "\t\t\tG) THIS WILL CONTINUE UNTIL ONE OF THE PLAYER WILL BE OUT OF MARBLES. " <<endl<<endl;
+    
+    
+        int pleftmarble, cleftmarble;
+        int pmarblenum, cmarblenum; 
+        int compchoices;
+        srand(time(0));
+        
+        cout<<"PLEASE ENTER 10 : ";
+        cin>>pleftmarble;
+        cout<<endl;
+        
+        cleftmarble = pleftmarble;
+        
+        cout<<"YOU HAVE "<<pleftmarble<<" MARBLES WITH YOU."<<endl;
+        cout<<endl;
+        
+        
+        restart13:
+        
+        restart14:
+        
+        restart16:
+        
+                                //ASKING FOR HOLDING THE MARBLE
+        
+        cout<<"HOW MUCH MARBLE YOU WANT IN YOUR HAND?"<<endl;
+        cin>>pmarblenum;
+        cout<<endl;
+        
+                                //DON'T HAVE MARBLE
+        
+        if(pmarblenum > pleftmarble)
+        {
+            cout<<"YOU DON'T HAVE THIS MUCH MARBLE."<<endl;
+            cout<<"RE-ENTER"<<endl<<endl;
+            goto restart13;
+        }
+        
+                                //DON'T HAVE MARBLE
+        
+        else if(pmarblenum < 1)
+        {
+            cout<<"YOU CAN'T PLAY EMPTY HAND."<<endl;
+            cout<<endl;
+            goto restart14;
+        }
+        
+                                //HAVE MARBLES
+        
+        else if(pmarblenum <= pleftmarble && pmarblenum >= 1)
+        {
+            pleftmarble = pleftmarble - pmarblenum;
+            
+            cout<<"YOU HOLD "<<pmarblenum<<" MARBLE WITH YOU."<<endl;
+            
+            restart18:
+            
+            cmarblenum = rand() % 10;
+            
+            if(cmarblenum > cleftmarble)
+            {
+                goto restart18;
+            }
+            
+            else if(cmarblenum < 1)
+            {
+                goto restart18;
+            }
+            
+            else{
+            
+            cleftmarble = cleftmarble - cmarblenum;
+            
+            cout<<"PROGU HOLD SOME MARBLE IN HIS HAND."<<endl;
+            cout<<endl;
+            
+            compchoices = rand() % 2;
+            
+                                //COMPUTER CHOOSED EVEN NUMBER
+            
+            if(compchoice == 1)
+            {
+                cout<<"PROGU CHOOSED EVEN NUMBER."<<endl;
+                cout<<endl;
+                
+                                //MY NUMBER IS EVEN
+                
+                if(pmarblenum % 2 == 0)
+                {
+                    cout<<"PROGU IS HOLDING "<<cmarblenum<<" MARBLE WITH HIM."<<endl;
+                    cout<<endl;
+                    
+                    cout<<"YOUR NUMBER IS EVEN."<<endl<<endl;
+                    
+                    cout<<"PROGU WIN THIS ROUND."<<endl;
+                    cout<<endl;
+                    
+                    cleftmarble = cleftmarble + cmarblenum + pmarblenum;
+                    
+                    cout<<"NOW PROGU HAVE "<<cleftmarble<<" MARBLE WITH HIM."<<endl;
+                    
+                    pleftmarble = pmarblenum + pleftmarble - pmarblenum;
+                    
+                    cout<<"NOW YOU HAVE "<<pleftmarble<<" MARBLE WITH YOU."<<endl;
+                    
+                                //COMPUTER OUT OF MARBLE
+                    
+                    if(cleftmarble < 1)
+                    {
+                        cout<<"PROGU HAS BEEN ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        goto restart17;
+                    }
+                    
+                                //COMPUTER WIN 
+                    
+                    else if(cleftmarble == 20)
+                    {
+                        cout<<endl;
+                        cout<<"PROGU WON THIS GAME!"<<endl<<endl;
+                        cout<<"YOU HAS BEEN ELIMINATED."<<endl;
+                        
+                        restart25:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart25;
+                        }
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                    
+                    
+                                //I AM OUT OF MARBLE
+                    
+                    if(pleftmarble < 1)
+                    {
+                        cout<<"YOU ARE ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        restart27:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart27;
+                        }
+                    }
+                    
+                                //I  WIN 
+                    
+                    else if(pleftmarble == 20)
+                    {
+                        cout<<endl;
+                        goto restart17;
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                }
+                
+                            //MY NUMBER IS ODD
+                
+                else{
+                    cout<<"PROGU IS HOLDING "<<cmarblenum<<" MARBLE WITH HIM."<<endl;
+                    cout<<endl;
+                    
+                    cout<<"YOUR NUMBER IS ODD."<<endl<<endl;
+                    
+                    cout<<"YOU WIN THIS ROUND."<<endl;
+                    cout<<endl;
+                    
+                    pleftmarble = pmarblenum + pleftmarble + cmarblenum;
+                    
+                    cout<<"NOW YOU HAVE "<<pleftmarble<<" MARBLE WITH YOU."<<endl;
+                    
+                    cleftmarble = cmarblenum + cleftmarble - cmarblenum;
+                    
+                    cout<<"NOW PROGU HAVE "<<cleftmarble<<" MARBLE WITH HIM."<<endl;
+                    
+                    
+                                //I AM OUT OF MARBLE
+                    
+                    if(pleftmarble < 1)
+                    {
+                        cout<<"YOU ARE ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        restart28:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart28;
+                        }
+                    }
+                    
+                                //I  WIN 
+                    
+                    else if(pleftmarble == 20)
+                    {
+                        cout<<endl;
+                        goto restart17;
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                    
+                                //COMPUTER OUT OF MARBLE
+                    
+                    if(cleftmarble < 1)
+                    {
+                        cout<<"PROGU HAS BEEN ELIMINATED."<<endl;
+                        cout<<endl;
+    
+                        goto restart17;
+                    }
+                    
+                                //COMPUTER WIN 
+                    
+                    else if(cleftmarble == 20)
+                    {
+                        cout<<endl;
+                        cout<<"PROGU WON THIS GAME!"<<endl<<endl;
+                        cout<<"YOU HAS BEEN ELIMINATED."<<endl;
+                        
+                        restart29:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart29;
+                        }
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                }
+            }
+            
+                                //COMPUTER CHOOSED ODD NUMBER
+            
+            else
+            {
+                cout<<"PROGU CHOOSED ODD NUMBER."<<endl;
+                cout<<endl;
+                
+                                //MY NUMBER IS EVEN
+                
+                if(pmarblenum % 2 == 0)
+                {
+                    cout<<"PROGU IS HOLDING "<<cmarblenum<<" MARBLE WITH HIM."<<endl;
+                    cout<<endl;
+                    
+                    cout<<"YOUR NUMBER IS EVEN."<<endl<<endl;
+                    
+                    cout<<"YOU WIN THIS ROUND."<<endl;
+                    cout<<endl;
+                    
+                    pleftmarble = pmarblenum + pleftmarble + cmarblenum;
+                    
+                    cout<<"NOW YOU HAVE "<<pleftmarble<<" MARBLE WITH YOU."<<endl;
+                    
+                    cleftmarble = cmarblenum + cleftmarble - cmarblenum;
+                    
+                    cout<<"NOW PROGU HAVE "<<cleftmarble<<" MARBLE WITH HIM."<<endl;
+                    
+                                //I AM OUT OF MARBLE
+                    
+                    if(pleftmarble < 1)
+                    {
+                        cout<<"YOU ARE ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        restart30:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart30;
+                        }
+                    }
+                    
+                                //I  WIN 
+                    
+                    else if(pleftmarble == 20)
+                    {
+                        cout<<endl;
+                        goto restart17;
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                    
+                    
+                                //COMPUTER OUT OF MARBLE
+                    
+                    if(cleftmarble < 1)
+                    {
+                        cout<<"PROGU HAS BEEN ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        goto restart17;
+                    }
+                    
+                                //COMPUTER WIN 
+                    
+                    else if(cleftmarble == 20)
+                    {
+                        cout<<endl;
+                        cout<<endl;
+                        cout<<"PROGU WON THIS GAME!"<<endl<<endl;
+                        cout<<"YOU HAS BEEN ELIMINATED."<<endl;
+                        
+                        restart31:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart31;
+                        }
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                }
+                
+                                //MY NUMBER IS ODD
+                
+                else{
+                    cout<<"PROGU IS HOLDING "<<cmarblenum<<" MARBLE WITH HIM."<<endl;
+                    cout<<endl;
+                    
+                    cout<<"YOUR NUMBER IS ODD."<<endl<<endl;
+                    
+                    cout<<"PROGU WIN THIS ROUND."<<endl;
+                    cout<<endl;
+                    
+                    cleftmarble = cleftmarble + cmarblenum + pmarblenum;
+                    
+                    cout<<"NOW PROGU HAVE "<<cleftmarble<<" MARBLE WITH HIM."<<endl;
+                    
+                    pleftmarble = pmarblenum + pleftmarble - pmarblenum;
+                    
+                    cout<<"NOW YOU HAVE "<<pleftmarble<<" MARBLE WITH YOU."<<endl;
+                    
+                                //COMPUTER OUT OF MARBLE
+                    
+                    if(cleftmarble < 1)
+                    {
+                        cout<<"PROGU HAS BEEN ELIMINATED."<<endl;
+                        cout<<endl;
+                        
+                        goto restart17;
+                    }
+                    
+                                //COMPUTER WIN 
+                    
+                    else if(cleftmarble == 20)
+                    {
+                        cout<<endl;
+                        cout<<"PROGU WON THIS GAME!"<<endl<<endl;
+                        cout<<"YOU HAS BEEN ELIMINATED."<<endl;
+                        
+                        restart32:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart32;
+                        }
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                    
+                    
+                                //I AM OUT OF MARBLE
+                    
+                    if(pleftmarble < 1)
+                    {
+                        cout<<"YOU ARE ELIMINATED."<<endl;
+                        
+                        restart33:
+                
+                        char  yono;
+                        
+                        cout<<"STILL WANT TO PLAY?"<<endl;
+                        cin>>yono;
+                        
+                        if(yono == 'y' || yono == 'Y')
+                        {
+                            goto restart26; 
+                        }
+                        
+                        else if(yono == 'n' || yono == 'N')
+                        {
+                            return 0;
+                        }
+                        
+                        else
+                        {
+                            cout<<"ENTER THE CORRECT INPUT"<<endl;
+                            cout<<endl;
+                            goto restart33;
+                        }
+                        
+                        return 0;
+                    }
+                    
+                                //I  WIN 
+                    
+                    else if(pleftmarble == 20)
+                    {
+                        cout<<endl;
+                        goto restart17;
+                    }
+                    
+                                //PLAY AGAIN
+                    
+                    else
+                    {
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;       
+                        cout<<"\t\t\t\t  NO ONE WIN - NEXT ROUND."<<endl<<endl;
+                        cout<<"\t\t\t\t____________________________"<<endl<<endl;
+                        cout<<endl;
+                        goto restart16;
+                    }
+                    
+                }
+            }
+            
+            
+            
+        }
+        
+         restart17:
+         
+        cout<<"\t\t\t************************************************"<<endl;
+        cout<<"\t\t\t*CONGRATULATION YOU MADE WITH FOURTH GAME TOO:)*"<<endl;
+        cout<<"\t\t\t************************************************"<<endl;
+        
     }
     
                             //NOT WILLING TO PLAY THE GAME.
@@ -464,4 +1202,5 @@ int main()
     
     
     return 0;
+}
 }
