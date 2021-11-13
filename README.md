@@ -1215,9 +1215,6 @@ int main()
         goto restart1;
     }
     
-    
-    
-    
     return 0;
 }
 }
