@@ -10,7 +10,9 @@ int main()
 
                                 //WELLCOMING THE PLAYER.
     
-    cout<<"\t\t\t\tWELLCOME TO LESTRO WORLD.\t\t"<<endl;
+    cout<<"\t\t\t\t***************************"<<endl;
+    cout<<"\t\t\t\t*WELLCOME TO LESTRO WORLD.*\t\t"<<endl;
+    cout<<"\t\t\t\t***************************"<<endl;
     
     cout<<"PRESS ENTER TO START."<<endl;
     getchar();
@@ -38,6 +40,8 @@ int main()
     if(choice == 1)
     {
     cout<<"\t\t\t    WELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
+    
+    cout<<"\t\t\t    ALLTOGETHER THEIR ARE 4 GAMES."<<endl<<endl;
     
                                 //FIRST GAME.
                                 
