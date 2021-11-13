@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+    int squidprice = 10000000;
+    
 
                                 //WELLCOMING THE PLAYER.
     
@@ -42,6 +44,12 @@ int main()
     cout<<"\t\t\t    WELLCOME TO SQUID GAME "<<name<<" :)\t\t"<<endl;
     
     cout<<"\t\t\t    ALLTOGETHER THEIR ARE 4 GAMES."<<endl<<endl;
+    
+    cout<<"\t\t\t**********************************************"<<endl;
+    cout<<"\t\t\t*SQUID GAME WINNING MONEY - 10 MILLION DOLLAR*\t\t"<<endl;
+    cout<<"\t\t\t**********************************************"<<endl;
+    
+    cout<<endl;
     
                                 //FIRST GAME.
                                 
@@ -1178,6 +1186,12 @@ int main()
         cout<<"\t\t\t************************************************"<<endl;
         cout<<"\t\t\t*CONGRATULATION YOU MADE WITH FOURTH GAME TOO:)*"<<endl;
         cout<<"\t\t\t************************************************"<<endl;
+        
+        cout<<endl;
+        
+        cout<<"\t\t\t*****************************************************"<<endl;
+        cout<<"\t\t\t*"<<name<<" YOU WON "<<squidprice<<"  MILLION DOLLAR*\t\t"<<endl;
+        cout<<"\t\t\t*****************************************************"<<endl;
         
     }
     
