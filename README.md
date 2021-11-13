@@ -551,11 +551,10 @@ int main()
 
         cout << "\t\t\tTHE RULES OF THIS GAME ARE THE FOLLOWING: " <<endl<<endl;
         cout << "\t\t\tA) YOU WILL HAVE 10 MARBELS WITH YOU." <<endl;
-        cout << "\t\t\tB) COMPUTER(HIS NAME -PROGU) WILL HAVE 10 MARBELS WITH HIM TOO." <<endl;
+        cout << "\t\t\tB) COMPUTER(HIS NAME IS -PROGU) WILL HAVE 10 MARBELS WITH HIM TOO." <<endl;
         cout << "\t\t\tC) YOU WILL KEEP SOME NUMBERS OF MARBLES IN YOUR HAND CLOSED." <<endl;
-        cout << "\t\t\tD) THEN PROGU WILL GUESS IF THE MARBLE NUMBERS ARE IN EVEN OR ODD." <<endl;
-        cout << "\t\t\tE) IF HE GUESS IT CORRECT YOU HAVE TO GIVE HIM THE MARBLES ONLY " <<endl;
-        cout << "\t\t\t   HOW MUCH NUMBER OF MARBLES HE IS HOLDING IN HIS CLOSED HAND. " <<endl;
+        cout << "\t\t\tD) THEN PROGU WILL GUESS IF THE MARBLE NUMBERS ARE EVEN OR ODD." <<endl;
+        cout << "\t\t\tE) IF HE GUESS IT CORRECT YOU HAVE TO GIVE HIM THE MARBLES YOU HAVE. " <<endl;
         cout << "\t\t\tG) THIS WILL CONTINUE UNTIL ONE OF THE PLAYER WILL BE OUT OF MARBLES. " <<endl<<endl;
     
     
